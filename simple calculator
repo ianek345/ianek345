@@ -1,0 +1,29 @@
+ask = input("would you like to ask me a maths question (y/n): ")
+if ask == "n":
+    print("ok bye")
+
+elif ask == "y":
+    maths = input("what type of maths (+,-,/,*): ")
+    if maths == "+":
+        first = float(input("first number: "))
+        second = float(input("second number: "))
+        answer = first + second
+        print(answer)
+
+    elif maths == "-":
+        first = float(input("first number: "))
+        second = float(input("second number: "))
+        answer = first - second
+        print(answer)
+
+    elif maths == "*":
+        first = float(input("first number: "))
+        second = float(input("second number: "))
+        answer = first * second
+        print(answer)
+
+    elif maths == "/":
+        first = float(input("first number: "))
+        second = float(input("second number: "))
+        answer = first / second
+        print(answer)
