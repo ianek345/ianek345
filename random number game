@@ -1,0 +1,16 @@
+import random 
+num1= random.randint(1,100) 
+quess = 0 
+
+while quess != num1: 
+    quess=int(input("guess a number between (1,100): ")) 
+
+    if quess == num1: 
+        print("you got it") 
+        print(num1) 
+     
+    elif quess < num1: 
+        print("higher") 
+
+    elif quess > num1: 
+        print("lower") 
