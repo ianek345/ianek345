@@ -1,0 +1,23 @@
+import random
+
+first=random.randint(1,10)
+second=random.randint(1,10)
+
+function = ["-","+","*","/"]
+rand_fun = random.choice(function)
+
+question= f"{first} {rand_fun} {second}"
+print("your question is",question)
+
+if rand_fun == "-":
+    answer=int(first)-int(second)
+elif rand_fun == "+":
+    answer=int(first)+int(second)
+elif rand_fun == "*":
+    answer=int(first)*int(second)
+else:
+    answer=int(first)/int(second)
+    
+    
+print("that is the correct answer",answer)
+        
